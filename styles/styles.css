@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.main-head {
+  background: #131c27;
+  color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+}
+
+.main-head h1 {
+  font-size: 2.6rem;
+}
+
+.main-head li, .main-head button, .main-head label, .main-head input, .main-head p {
+  font-size: 1.8rem;
+}
+
+.main-head a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-head nav {
+  min-height: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 2rem;
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-head nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40rem;
+          flex: 1 1 40rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-head nav #logo {
+  font-family: 'Pattaya', sans-serif;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 40rem;
+          flex: 2 1 40rem;
+  font-weight: 300;
+}
+
+.hero {
+  color: white;
+  min-height: 90vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url("/media/img/landing-page.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url("/media/img/landing-page.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 3.8rem;
+}
+
+.hero h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  padding: 5rem;
+}
+
+.hero h4, .hero h5 {
+  font-size: 2.8rem;
+}
+
+.hero button {
+  padding: 2rem 6rem;
+  background: #466e97;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  -webkit-transition: background 0.5s ease;
+  transition: background 0.5s ease;
+  border-radius: 0.5rem;
+}
+
+.hero button:hover {
+  background: #2c4660;
+}
+
+#locations {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url("/media/img/new-york-page.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url("/media/img/new-york-page.png");
+  background-size: center;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+#locations .locations-head {
+  width: 90%;
+  margin: auto;
+}
+
+#locations .locations-head h2 {
+  padding: 1rem 0rem;
+  font-size: 3.8rem;
+}
+
+#locations .locations-head h3 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+#locations .locations-head .cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+
+#locations .locations-head .moving-cloud-1 {
+  -webkit-animation: cloudAnimation 4s infinite alternate ease;
+          animation: cloudAnimation 4s infinite alternate ease;
+}
+
+@-webkit-keyframes cloudAnimation {
+  from {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@keyframes cloudAnimation {
+  from {
+    -webkit-transform: translate(10%, -10%);
+            transform: translate(10%, -10%);
+  }
+  to {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+}
+
+@media (max-width: 932px) {
+  html {
+    font-size: 45%;
+  }
+  nav {
+    text-align: center;
+  }
+  nav ul {
+    padding-left: 5rem;
+  }
+  #logo {
+    padding: 2rem;
+  }
+  .cloud {
+    position: relative;
+    height: 40rem;
+  }
+}
+
+.benefits .benefits-head {
+  background: #343c44;
+  padding: 3rem;
+  min-height: 30vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.benefits h2, .benefits h3 {
+  padding: 1rem;
+}
+
+.benefits .cards {
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 70vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-size: 1.5rem;
+}
+
+.benefits .cards .card {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 35rem;
+          flex: 1 1 35rem;
+  min-height: 40vh;
+  margin: 2rem 2rem;
+  -webkit-box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.benefits .cards .card-icon {
+  background: #2c4660;
+}
+
+.benefits .cards img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.benefits .cards h4, .benefits .cards p {
+  padding: 1rem;
+}
+
+#contact {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4))), url("/media/img/contact-mountain.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.4)), url("/media/img/contact-mountain.png");
+  background-size: cover;
+  background-repeat: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#contact .form-wrapper {
+  background: rgba(19, 28, 39, 0.8);
+  width: 60%;
+  color: white;
+  border-radius: 20px;
+}
+
+#contact .form-wrapper .form-head {
+  text-align: center;
+  padding: 4rem;
+}
+
+#contact .form-wrapper .name-form, #contact .form-wrapper .email-form {
+  padding: 3rem;
+  text-align: center;
+}
+
+#contact .form-wrapper label {
+  margin: 0rem 3rem;
+}
+
+#contact .form-wrapper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+#contact .form-wrapper input {
+  padding: 1rem 3rem;
+}
+
+footer {
+  color: white;
+  background: #131c27;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */
